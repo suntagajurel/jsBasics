@@ -11,7 +11,7 @@ firstCall = (friend, callback) => {
     console.log(`I am busy rightnow I will call you later.I am talking to ${friend}`)
     setTimeout(() => {
         callFinished = true;
-        console.log("call finisfed");
+        console.log("call finished");
         callback();
 
 

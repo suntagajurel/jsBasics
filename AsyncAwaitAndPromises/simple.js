@@ -3,17 +3,11 @@
 let startProject = async () => {
     let promiseToCompleteProject = new Promise((resolve, reject) => {
 
-        let isFinished = true;
-
-        if (isFinished) {
-            resolve('project is finished');
-        } else {
-            reject(" project will take some time");
-        }
-
+       setTimeout(()=> {resolve('repository created ')},3000)
     })
+
     let result = await promiseToCompleteProject;
-    alert(result);
+    console.log(result);
 
 }
 

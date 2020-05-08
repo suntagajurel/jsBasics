@@ -6,12 +6,12 @@ let a, b, rest;
 
 console.log(rest);
 
-let tasks  = {
-    id:1,
+let tasks = {
+    id: 1,
     duedate: 2,
-    priority:"important",
-    
+    priority: "important",
+
 }
 
-var {id,duedate,priority} = tasks;
+var { id, duedate, priority } = tasks;
 console.log(priority);

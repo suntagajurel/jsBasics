@@ -1,12 +1,11 @@
 
-let showGithubInfo = async () => {
-  let response = await fetch('https://api.github.com/users/sunta');
+let showGithubInfo = async (name) => {
+  let response = await fetch(`https://api.github.com/users/${name}`);
   let data = await response.json();
   return data
 }
 
-showGithubInfo().then((data) => {
-  console.log(data);
+showGithubInfo('sunitagajurel').then((data) => {
   let name = data.login;
   let noOfFollowers = data.followers;
   console.log(`your name is : ${name}`);
