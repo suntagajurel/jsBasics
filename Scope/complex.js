@@ -20,7 +20,7 @@ checkReDeclarationUsingVar = () => {
         var x = 5;
     }
 
-    console.log(x); // value of x changes outside block i.e x = 5;
+    console.log(`using  var : ${x}`); // value of x changes outside block i.e x = 5;
 }
 
 checkReDeclarationUsingVar();
@@ -32,7 +32,7 @@ checkReDeclarationUsingLet = () => {
         let x = 5;
     }
 
-    console.log(x);// value of x doesnot changes outside block x =2
+    console.log(`using  let : ${x}`);// value of x doesnot changes outside block x =2
 }
 
 checkReDeclarationUsingLet();
